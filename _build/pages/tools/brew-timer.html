@@ -1,0 +1,24 @@
+<!--META {"title": "Coffee Brew Timer with Pour Schedules", "description": "Free guided coffee brew timer with step-by-step pour schedules for pour-over, French press, AeroPress, Chemex, espresso, moka pot, cold brew and Turkish coffee.", "active": "tools", "scripts": ["tools.js"], "app": true, "section_label": "Tool", "keywords": "timer bloom pour schedule", "crumbs": [["Home", "/"], ["Tools", "/tools/"], ["Brew timer", "/tools/brew-timer.html"]], "faq": [["What is a bloom in pour-over coffee?", "The bloom is the first small pour — usually about twice the coffee's weight in water — that lets trapped carbon dioxide escape from fresh grounds for 30–45 seconds, so later pours extract evenly."], ["Does the timer keep running if I switch tabs?", "Yes. The timer measures real elapsed time, so it stays accurate even if your phone screen dims or you switch apps briefly."], ["Can I use the timer for my own recipe?", "Use the method closest to yours and treat each step as a cue. The timings are proven starting points; adjust to your grinder and beans."]]} -->
+<div class="wrap page-head">{{CRUMBS}}<span class="eyebrow">Free tool</span><h1>Guided brew timer</h1><p class="lede">Choose a method and press start. The timer walks you through each pour and step, highlights what to do now, and can chime at every stage.</p></div>
+<section class="wrap" style="padding-bottom:50px">
+ <div class="tool panel" id="brew-timer">
+  <div>
+   <label for="bt-method">Method</label><select id="bt-method"><option value="pourover">Pour-over (cone)</option><option value="chemex">Chemex</option><option value="aeropress">AeroPress</option><option value="frenchpress">French press</option><option value="espresso">Espresso</option><option value="mokapot">Moka pot</option><option value="turkish">Turkish (cezve)</option><option value="coldbrew">Cold brew</option></select>
+   <p class="muted" id="bt-meta" style="margin-top:12px"></p>
+   <label class="check"><input type="checkbox" id="bt-sound" checked> Chime at each step</label>
+   <div class="callout tip"><p><strong>Tip:</strong> Weigh as you pour. Put your brewer on a scale, tare it, then follow the cumulative water targets in the matching <a href="/brew/">brew guide</a>.</p></div>
+  </div>
+  <div class="readout"><div class="timer-face" id="bt-face" aria-live="off">0:00</div>
+   <div class="btn-row" style="justify-content:center"><button class="btn primary" type="button" id="bt-start">Start</button><button class="btn ghost" style="color:var(--bg);border-color:rgba(255,255,255,.3)" type="button" id="bt-reset">Reset</button></div>
+   <ol class="timer-steps" id="bt-steps" aria-live="polite"></ol></div>
+ </div>
+</section>
+<section class="section alt"><div class="wrap prose" style="max-width:860px">
+ <h2 id="why">Why timing matters</h2>
+ <p>Contact time between water and coffee is one of the four main extraction variables, alongside grind size, temperature and agitation. In percolation methods like pour-over and Chemex, total time is mostly a <em>result</em> of grind size: if your drawdown finishes much faster than the target, grind finer; if it stalls, grind coarser. In immersion methods like the French press and AeroPress, time is a variable you control directly.</p>
+ <p>A consistent pour schedule also controls agitation. Pouring in steady spirals at the same pace each day keeps the coffee bed level and the extraction even, which is why recipes specify both the target weight and the moment each pour begins.</p>
+ {{AD}}
+ <h2 id="read">Reading the schedule</h2>
+ <p>Each line shows an action and the time it starts. The highlighted line is what you should be doing now; struck-through lines are finished. Pair the timer with the <a href="/tools/brew-ratio-calculator.html">brew ratio calculator</a> to scale any recipe to your cup size, and see the <a href="/brew/pour-over-v60.html">pour-over guide</a> for technique details.</p>
+ {{FAQ}}
+</div></section>

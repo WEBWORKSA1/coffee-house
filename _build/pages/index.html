@@ -1,0 +1,149 @@
+<!--META {"title": "Coffee.House", "description": "Brew better coffee and build your own café. Free brewing guides, drink recipes, origins, gear advice, calculators and a free coffee shop launch consultation.", "scripts": ["tools.js"], "search": false, "faq": [["Is Coffee.House free to use?", "Yes. Every guide, recipe and tool is free and supported by advertising, reader donations and partners. There are no paywalls."], ["Who writes Coffee.House?", "An independent editorial team of coffee enthusiasts and café-industry contributors. Read our editorial policy to see how guides are researched, written and updated."], ["Can you help me open a coffee shop?", "Yes. Request a free launch consultation and we'll reply with a tailored starting plan and, if you want them, introductions to equipment, financing and wholesale coffee partners."], ["Is Coffee.House connected to any coffee chain?", "No. Coffee.House is an independent publication and is not affiliated with any café chain, roaster or brand. See our trademark and copyright disclosure."]], "schema": [{"@context": "https://schema.org", "@type": "WebSite", "name": "Coffee.House", "url": "https://coffee.house/", "potentialAction": {"@type": "SearchAction", "target": "https://coffee.house/?q={search_term_string}", "query-input": "required name=search_term_string"}}, {"@context": "https://schema.org", "@type": "Organization", "name": "Coffee.House", "url": "https://coffee.house/", "logo": "https://coffee.house/assets/img/favicon.svg"}]} -->
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="eyebrow">Brew · Discover · Build</span>
+   <h1>Better coffee at home. <em>Your own café</em>, one day.</h1>
+   <p class="lede">Precise brewing guides, café-style recipes, origin deep-dives and free tools — plus a launch desk that helps future owners plan, fund and open a profitable coffee shop.</p>
+   <div class="btn-row"><a class="btn primary" href="/brew/">Start brewing</a><a class="btn ghost" href="/business/launch-consultation.html">Plan my café — free</a></div>
+   <div class="hero-stats"><div><b>{{COUNT}}+</b>in-depth guides</div><div><b>6</b>free coffee tools</div><div><b>8</b>brew methods</div><div><b>0</b>paywalls</div></div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+   <svg viewBox="0 0 400 400">
+    <defs>
+     <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7A4A2E"/><stop offset="1" stop-color="#3A2216"/></linearGradient>
+     <linearGradient id="hg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8C27E"/><stop offset="1" stop-color="#C98B3E"/></linearGradient>
+     <radialGradient id="hg3" cx=".5" cy=".4" r=".6"><stop offset="0" stop-color="#F6E2C3"/><stop offset="1" stop-color="#F6E2C3" stop-opacity="0"/></radialGradient>
+    </defs>
+    <circle cx="200" cy="200" r="188" fill="url(#hg3)"/>
+    <path d="M58 190 200 72l142 118" fill="none" stroke="#C2582F" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="276" y="96" width="26" height="54" rx="4" fill="#C2582F"/>
+    <g class="steam" fill="none" stroke="#C98B3E" stroke-width="7" stroke-linecap="round" opacity=".9">
+     <path d="M160 168c-12-18 12-26 0-46"/><path d="M200 162c-12-18 12-26 0-46"/><path d="M240 168c-12-18 12-26 0-46"/>
+    </g>
+    <path d="M104 196h192v54c0 52-42 94-94 94h-4c-52 0-94-42-94-94v-54Z" fill="url(#hg1)"/>
+    <path d="M296 214h18c22 0 38 16 38 36s-16 36-38 36h-26" fill="none" stroke="#3A2216" stroke-width="16"/>
+    <ellipse cx="200" cy="198" rx="96" ry="14" fill="url(#hg2)"/>
+    <path d="M176 196c8-10 40-10 48 0-8 8-40 8-48 0Z" fill="#F6E2C3" opacity=".85"/>
+    <ellipse cx="200" cy="356" rx="128" ry="12" fill="#3A2216" opacity=".14"/>
+    <g fill="#5E3521"><ellipse cx="78" cy="320" rx="15" ry="21" transform="rotate(-30 78 320)"/><ellipse cx="330" cy="330" rx="13" ry="19" transform="rotate(25 330 330)"/><ellipse cx="350" cy="120" rx="10" ry="15" transform="rotate(40 350 120)"/></g>
+    <g stroke="#E8C27E" stroke-width="2.5" fill="none"><path d="M70 330c8-6 6-16 14-22"/><path d="M324 340c8-4 8-14 12-20"/></g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section class="section tight" aria-labelledby="picker-h">
+ <div class="wrap">
+  <div class="picker" id="picker">
+   <h2 id="picker-h" style="font-size:1.35rem;margin-bottom:12px">What are you brewing today?</h2>
+   <div class="picker-tabs" role="group" aria-label="Brew method">
+    <button class="chip" type="button" data-m="pourover">Pour-over</button><button class="chip" type="button" data-m="frenchpress">French press</button><button class="chip" type="button" data-m="aeropress">AeroPress</button><button class="chip" type="button" data-m="espresso">Espresso</button><button class="chip" type="button" data-m="coldbrew">Cold brew</button><button class="chip" type="button" data-m="mokapot">Moka pot</button><button class="chip" type="button" data-m="chemex">Chemex</button><button class="chip" type="button" data-m="turkish">Turkish</button>
+   </div>
+   <div class="picker-out" aria-live="polite"><div><small>Ratio</small><b data-o="ratio">—</b></div><div><small>Water</small><b data-o="temp">—</b></div><div><small>Grind</small><b data-o="grind">—</b></div><div><small>Brew time</small><b data-o="time">—</b></div></div>
+   <div class="btn-row" style="margin-top:14px"><a class="btn dark sm" data-o="link" href="/brew/">Open the guide →</a><a class="btn ghost sm" href="/tools/brew-ratio-calculator.html">Calculate for my cup size</a><a class="btn ghost sm" href="/tools/brew-timer.html">Start a guided timer</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" aria-labelledby="brew-h">
+ <div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow">Brew guides</span><h2 id="brew-h">Master the method</h2><p>Exact numbers, sensory cues and a fix for every bad cup.</p></div><a class="btn ghost sm" href="/brew/">All brew guides →</a></div>
+  <div class="grid g4">{{CARDS:brew:4}}</div>
+ </div>
+</section>
+
+<section class="section alt" aria-labelledby="tools-h">
+ <div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow">Free tools</span><h2 id="tools-h">Calculators that do the thinking</h2><p>Interactive, instant and free — no sign-up needed.</p></div><a class="btn ghost sm" href="/tools/">All tools →</a></div>
+  <div class="grid g3">
+   <article class="card"><div class="ico">{{ICON:calc}}</div><h3><a href="/tools/brew-ratio-calculator.html">Brew ratio calculator</a></h3><p>Coffee and water for any method, cup size and strength — grams or ounces.</p></article>
+   <article class="card"><div class="ico">{{ICON:timer}}</div><h3><a href="/tools/brew-timer.html">Guided brew timer</a></h3><p>Pour-by-pour schedules for eight methods with optional chimes.</p></article>
+   <article class="card"><div class="ico">{{ICON:cup}}</div><h3><a href="/tools/caffeine-calculator.html">Caffeine calculator</a></h3><p>Track today's intake and estimate what's left in your system at bedtime.</p></article>
+   <article class="card"><div class="ico">{{ICON:wheel}}</div><h3><a href="/tools/flavor-wheel.html">Interactive flavor wheel</a></h3><p>Put words to what you taste — and learn which origins deliver it.</p></article>
+   <article class="card"><div class="ico">{{ICON:quiz}}</div><h3><a href="/tools/coffee-quiz.html">Find-your-coffee quiz</a></h3><p>Six questions to your ideal brew method, roast and first recipe.</p></article>
+   <article class="card"><div class="ico">{{ICON:shop}}</div><h3><a href="/tools/coffee-shop-profit-calculator.html">Café profit calculator</a></h3><p>Revenue, margin and break-even customers per day for your café idea.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" aria-labelledby="biz-h">
+ <div class="wrap">
+  <div class="band">
+   <div>
+    <span class="eyebrow" style="color:var(--gold)">Free café launch desk</span>
+    <h2 id="biz-h">Dreaming of your own coffee shop?</h2>
+    <p>Tell us your concept, budget and timeline. We'll send back a tailored starting plan — and, only if you want them, introductions to vetted partners.</p>
+    <ul><li>Startup budget and break-even sanity check</li><li>Equipment package and quotes from suppliers</li><li>Financing, lease and location guidance</li><li>Wholesale roaster and menu introductions</li></ul>
+    <div class="btn-row"><a class="btn primary" href="/business/launch-consultation.html">Get my free plan</a><a class="btn ghost" href="/business/how-to-open-a-coffee-shop.html">Read the 12-step roadmap</a></div>
+   </div>
+   <div class="panel" style="color:var(--ink)">
+    <h3 style="margin-bottom:4px">Quick request</h3><p class="muted" style="font-size:.9rem">Takes 30 seconds. We reply within two business days.</p>
+    <form class="form" data-form="Café launch — quick request" data-redirect="thank-you.html">
+     <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+     <div class="row"><div><label for="q-name">Name</label><input id="q-name" name="name" type="text" required autocomplete="name"></div><div><label for="q-email">Email</label><input id="q-email" name="email" type="email" required autocomplete="email"></div></div>
+     <div class="row"><div><label for="q-stage">Stage</label><select id="q-stage" name="stage"><option>Just an idea</option><option>Writing a business plan</option><option>Funded, finding a location</option><option>Already operating</option></select></div>
+     <div><label for="q-budget">Budget</label><select id="q-budget" name="budget"><option>Under $25k</option><option>$25k–$75k</option><option>$75k–$150k</option><option>$150k–$300k</option><option>$300k+</option><option>Not sure yet</option></select></div></div>
+     <div><label for="q-city">City &amp; country</label><input id="q-city" name="location" type="text" required placeholder="e.g. Toronto, Canada"></div>
+     <button class="btn primary" type="submit">Send my request</button><p class="form-status" aria-live="polite"></p>
+     <p class="consent-line">By sending, you agree we may contact you about your request. See our <a href="/privacy.html">privacy policy</a>.</p>
+    </form>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section alt" aria-labelledby="rec-h">
+ <div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow">Recipes</span><h2 id="rec-h">Café drinks, made at home</h2><p>Scalable, printable recipe cards for the classics.</p></div><a class="btn ghost sm" href="/recipes/">All recipes →</a></div>
+  <div class="grid g4">{{CARDS:recipes:4}}</div>
+ </div>
+</section>
+
+<section class="section" aria-labelledby="ori-h">
+ <div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow">Origins</span><h2 id="ori-h">Travel the coffee belt</h2><p>Coffee grows between roughly the Tropics of Cancer and Capricorn. Every origin tastes different — here's why.</p></div><a class="btn ghost sm" href="/beans/">Beans &amp; origins →</a></div>
+  <svg class="belt" viewBox="0 0 1000 240" role="img" aria-label="Simplified map of the coffee belt between the tropics">
+   <rect x="0" y="0" width="1000" height="240" rx="18" fill="var(--soft)"/>
+   <rect x="0" y="70" width="1000" height="100" fill="color-mix(in srgb,var(--leaf) 16%,transparent)"/>
+   <line x1="0" y1="70" x2="1000" y2="70" stroke="var(--leaf)" stroke-dasharray="6 6"/><line x1="0" y1="170" x2="1000" y2="170" stroke="var(--leaf)" stroke-dasharray="6 6"/>
+   <text x="14" y="62" font-size="12" fill="var(--muted)">Tropic of Cancer</text><text x="14" y="190" font-size="12" fill="var(--muted)">Tropic of Capricorn</text>
+   <g font-size="13" font-weight="600" fill="var(--ink)">
+    <circle cx="230" cy="100" r="7" fill="var(--accent)"/><text x="242" y="104">Guatemala</text>
+    <circle cx="290" cy="126" r="7" fill="var(--accent)"/><text x="302" y="130">Colombia</text>
+    <circle cx="355" cy="160" r="7" fill="var(--accent)"/><text x="367" y="164">Brazil</text>
+    <circle cx="560" cy="112" r="7" fill="var(--accent)"/><text x="572" y="116">Ethiopia</text>
+    <circle cx="575" cy="140" r="7" fill="var(--accent)"/><text x="587" y="144">Kenya</text>
+    <circle cx="790" cy="138" r="7" fill="var(--accent)"/><text x="802" y="142">Sumatra</text>
+   </g>
+  </svg>
+  <div class="grid g3" style="margin-top:22px">{{CARDS:beans:3}}</div>
+ </div>
+</section>
+
+<section class="section ink" aria-labelledby="vid-h">
+ <div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow" style="color:var(--gold)">Watch &amp; learn</span><h2 id="vid-h">Video lessons from great educators</h2><p class="muted">Hand-picked tutorials. Videos load only when you press play.</p></div><a class="btn primary sm" href="/videos.html">Video library →</a></div>
+  <div class="grid g4">{{VIDEOS::4}}</div>
+ </div>
+</section>
+
+<section class="section" aria-labelledby="com-h">
+ <div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow">Community</span><h2 id="com-h">Compete, contribute, support</h2><p>Coffee.House is built with its readers.</p></div></div>
+  <div class="grid g3">
+   <article class="card"><div class="ico">{{ICON:trophy}}</div><span class="tag gold">Prizes</span><h3><a href="/contests.html">Monthly contests</a></h3><p>Latte art, home-brew photography and original recipes — enter free and win gear, beans and features.</p></article>
+   <article class="card"><div class="ico">{{ICON:brief}}</div><span class="tag">Hiring</span><h3><a href="/careers.html">Careers &amp; talent</a></h3><p>We commission writers, video creators, photographers and café consultants. Café owners can request talent too.</p></article>
+   <article class="card"><div class="ico">{{ICON:heart}}</div><span class="tag cop">Donate</span><h3><a href="/support.html">Support Coffee.House</a></h3><p>Keep every guide free. Your support funds operations, new content, contests and prizes.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section alt" aria-labelledby="jr-h">
+ <div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow">Journal</span><h2 id="jr-h">Go deeper</h2><p>Caffeine, health research, history, culture and the craft of tasting.</p></div><a class="btn ghost sm" href="/journal/">The journal →</a></div>
+  <div class="grid g3">{{CARDS:journal:3}}</div>
+ </div>
+</section>
+
+<section class="section"><div class="wrap prose" style="max-width:860px">{{FAQ}}</div></section>

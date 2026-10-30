@@ -1,0 +1,47 @@
+<!--META {"title": "Support Coffee.House — Donate", "description": "Keep Coffee.House free. Donate once or monthly to fund operations, new guides and videos, promotion, hiring contributors, and contest prizes for our community.", "active": "", "section_label": "Community", "keywords": "donate support buy us a coffee", "crumbs": [["Home", "/"], ["Support", "/support.html"]], "faq": [["Where does my donation go?", "Into four buckets: operations (hosting, tools, editing), new content and videos, promotion and outreach, and community contests and prizes. We publish the split on this page and update it as we grow."], ["Is my donation tax-deductible?", "No. Coffee.House is an independent publication, not a registered charity, so contributions are not tax-deductible."], ["Can I sponsor a specific contest or guide?", "Yes. Use the form and choose 'Contests & prizes' or 'New guides & videos', or see our sponsorship options on the advertise page."], ["How does pledge mode work?", "When instant checkout isn't shown, submit a pledge and we'll email you a secure payment link for the amount and frequency you chose."]]} -->
+<div class="wrap page-head">{{CRUMBS}}<span class="eyebrow">Support independent coffee media</span><h1>Buy the house a coffee</h1><p class="lede">Every guide, tool and video on Coffee.House is free. Reader support keeps it that way — and funds the contests, prizes and contributors that make the community better.</p></div>
+<section class="wrap" style="padding-bottom:40px">
+ <div class="tiers" role="group" aria-label="Choose an amount">
+  <button class="tier" type="button" data-amount="3" data-freq="One-time" aria-pressed="false"><b>$3</b><span>Espresso</span><small>A one-time thank-you</small></button>
+  <button class="tier" type="button" data-amount="5" data-freq="Monthly" aria-pressed="true"><b>$5</b><span>Latte Club</span><small>Monthly · supporter shout-out</small></button>
+  <button class="tier" type="button" data-amount="10" data-freq="Monthly" aria-pressed="false"><b>$10</b><span>Pour-over Patron</span><small>Monthly · early access to guides</small></button>
+  <button class="tier" type="button" data-amount="25" data-freq="Monthly" aria-pressed="false"><b>$25</b><span>Roaster</span><small>Monthly · vote on next topics</small></button>
+  <button class="tier" type="button" data-amount="100" data-freq="One-time" aria-pressed="false"><b>$100</b><span>Prize Sponsor</span><small>Funds a contest prize</small></button>
+ </div>
+</section>
+<section class="wrap" style="padding-bottom:60px">
+ <div class="grid g2" style="align-items:start">
+  <div class="panel">
+   <div id="pay-links" class="btn-row" style="margin-bottom:10px"></div>
+   <p id="pay-note" class="muted" hidden style="font-size:.9rem">Prefer us to send a payment link, or want to sponsor something specific? Use the form below.</p>
+   <p id="pledge-note" class="notice" hidden>Make a pledge below and we'll email you a secure payment link within one business day.</p>
+   <form class="form" data-form="Donation pledge" data-redirect="thank-you.html">
+    <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+    <div class="row"><div><label for="amount">Amount (USD)</label><input id="amount" name="amount" type="number" min="1" step="1" value="5" required></div><div><label for="frequency">Frequency</label><select id="frequency" name="frequency"><option>One-time</option><option selected>Monthly</option><option>Yearly</option></select></div></div>
+    <div><label for="sp-use">Direct my support to</label><select id="sp-use" name="allocation"><option>Wherever it's needed most</option><option>Operations &amp; hosting</option><option>New guides &amp; videos</option><option>Promotion &amp; marketing</option><option>Hiring contributors &amp; talent</option><option>Contests &amp; prizes</option></select></div>
+    <div class="row"><div><label for="sp-name">Name</label><input id="sp-name" name="name" type="text" required autocomplete="name"></div><div><label for="sp-email">Email</label><input id="sp-email" name="email" type="email" required autocomplete="email"></div></div>
+    <div><label for="sp-msg">Message <span class="opt">(optional)</span></label><textarea id="sp-msg" name="message" style="min-height:90px"></textarea></div>
+    <label class="check"><input type="checkbox" name="public_thanks" value="Yes"> Thank me publicly on the supporters list</label>
+    <button class="btn primary" type="submit">Pledge my support</button><p class="form-status" aria-live="polite"></p>
+   </form>
+  </div>
+  <div>
+   <div class="panel"><h2 style="font-size:1.4rem">Where support goes</h2>
+    <div class="alloc" style="margin-top:14px">
+     <div><span>Operations</span><i><em style="width:35%"></em></i><b>35%</b></div>
+     <div><span>Guides &amp; videos</span><i><em style="width:30%"></em></i><b>30%</b></div>
+     <div><span>Contests &amp; prizes</span><i><em style="width:15%"></em></i><b>15%</b></div>
+     <div><span>Promotion</span><i><em style="width:10%"></em></i><b>10%</b></div>
+     <div><span>Hiring talent</span><i><em style="width:10%"></em></i><b>10%</b></div>
+    </div><p class="muted" style="font-size:.85rem;margin-top:14px">Target allocation. Updated as the community grows.</p></div>
+   <div class="panel" style="margin-top:18px"><h3 style="font-size:1.15rem">Other ways to help</h3><ul><li>Share a guide with a friend who brews</li><li><a href="/contests.html">Enter a contest</a> or sponsor a prize</li><li><a href="/careers.html">Contribute</a> as a writer, creator or barista expert</li><li>Businesses: <a href="/advertise.html">sponsor or partner with us</a></li></ul></div>
+  </div>
+ </div>
+</section>
+<section class="section alt"><div class="wrap prose" style="max-width:860px">
+ <h2 id="why">Why reader support matters</h2>
+ <p>Advertising covers part of our costs, but it can't fund everything a great coffee resource needs: commissioning experienced baristas to review guides, producing video lessons, running fair contests with real prizes and building free tools. Donations let us say yes to that work without paywalls or sponsored rankings.</p>
+ <p>Coffee.House is an independent publication, not a charity, so contributions are not tax-deductible. Payments are processed by third-party providers; we never see or store card details.</p>
+ {{AD}}
+ {{FAQ}}
+</div></section>

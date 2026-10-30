@@ -1,0 +1,29 @@
+<!--META {"title": "Caffeine Calculator: Daily Intake & Bedtime Estimate", "description": "Track caffeine from coffee, tea, cola and energy drinks, compare with the commonly cited 400 mg daily guide, and estimate how much remains at bedtime.", "active": "tools", "scripts": ["tools.js"], "app": true, "section_label": "Tool", "keywords": "caffeine mg half-life sleep", "crumbs": [["Home", "/"], ["Tools", "/tools/"], ["Caffeine calculator", "/tools/caffeine-calculator.html"]], "faq": [["How much caffeine is too much?", "The U.S. FDA cites about 400 mg a day as an amount not generally associated with negative effects for most healthy adults. Individual tolerance varies widely, and pregnancy, medications and some conditions change the picture — ask a clinician."], ["What is caffeine's half-life?", "For many healthy adults it is roughly 3 to 7 hours, often quoted as around 5. Genetics, pregnancy, smoking, liver function and some medications can make it much shorter or longer."], ["How accurate is this calculator?", "It uses typical caffeine values and a simple half-life model, so treat results as rough estimates. Real caffeine content varies with beans, roast, brew method and serving size."]]} -->
+<div class="wrap page-head">{{CRUMBS}}<span class="eyebrow">Free tool</span><h1>Caffeine calculator</h1><p class="lede">Log what you drink today, see your total against the commonly cited 400 mg daily guide, and estimate how much caffeine is still in your system when you go to bed.</p></div>
+<section class="wrap" style="padding-bottom:50px">
+ <div class="tool panel" id="caf-calc">
+  <div>
+   <div class="row" style="display:grid;grid-template-columns:1fr 120px;gap:10px;align-items:end"><div><label for="caf-add">Drink</label><select id="caf-add"></select></div><div><label for="caf-time">Time</label><input type="text" id="caf-time" value="08:00" inputmode="numeric" pattern="[0-2]?[0-9]:[0-5][0-9]" aria-describedby="caf-fmt"></div></div>
+   <small id="caf-fmt" class="muted">24-hour time, e.g. 14:30</small>
+   <div class="btn-row" style="margin:12px 0 18px"><button class="btn dark sm" type="button" id="caf-add-btn">+ Add drink</button></div>
+   <ul id="caf-list" class="caf-list" style="list-style:none;padding:0;margin:0 0 18px"></ul>
+   <div class="row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><label for="caf-bed">Bedtime</label><input type="text" id="caf-bed" value="23:00" inputmode="numeric"></div>
+   <div class="range" style="margin:0"><div class="range-top"><label for="caf-hl">Half-life</label><b id="caf-v-hl">5 h</b></div><input type="range" id="caf-hl" min="3" max="8" step=".5" value="5"></div></div>
+  </div>
+  <div class="readout" aria-live="polite">
+   <small>Total today</small><div class="big" id="caf-total">0 mg</div><p id="caf-msg" style="margin:10px 0 0;opacity:.85">—</p>
+   <div class="row-out"><div><small>Of 400 mg guide</small><b id="caf-pct">0%</b></div><div><small>Est. at bedtime</small><b id="caf-bedtime">~0 mg</b></div></div>
+   <p style="font-size:.82rem;opacity:.7;margin:18px 0 0">Estimates use typical values and a simple half-life model. General information only — not medical advice.</p>
+  </div>
+ </div>
+</section>
+<section class="section alt"><div class="wrap prose" style="max-width:860px">
+ <h2 id="how">How this estimate works</h2>
+ <p>Each drink is assigned a typical caffeine value — for example, about 63 mg for a single espresso and about 95 mg for a 240 ml cup of drip coffee. The calculator then applies exponential decay: with a 5-hour half-life, 100 mg consumed at 18:00 leaves about 50 mg at 23:00. Slide the half-life to see how sensitive the bedtime number is to your own metabolism.</p>
+ <p>Real-world caffeine varies a lot. Robusta beans carry roughly double the caffeine of arabica, larger servings scale linearly, and cold brew concentrate can be very strong before dilution. Our <a href="/journal/caffeine-guide.html">caffeine guide</a> breaks down the ranges by drink and brew method.</p>
+ {{AD}}
+ <div class="callout note"><p><strong>Health note:</strong> This tool is general information, not medical advice. If you are pregnant, breastfeeding, take medication, or have heart, anxiety or sleep concerns, talk to a qualified clinician about caffeine. Read more in <a href="/journal/coffee-and-health.html">coffee and health</a>.</p></div>
+ <h2 id="sleep">Caffeine and sleep</h2>
+ <p>Because caffeine blocks adenosine — the molecule that builds "sleep pressure" through the day — a late afternoon coffee can still be active at midnight. Many people find a personal cut-off time 8–10 hours before bed works well. If you love the ritual in the evening, <a href="/journal/decaf-explained.html">modern decaf</a> keeps the flavor with only a few milligrams of caffeine per cup.</p>
+ {{FAQ}}
+</div></section>
