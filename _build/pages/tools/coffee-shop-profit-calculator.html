@@ -1,0 +1,45 @@
+<!--META {"title": "Coffee Shop Profit Calculator & Break-Even Tool", "description": "Estimate monthly coffee shop revenue, gross profit, net profit and break-even customers per day. Free café profit calculator with a personalized launch plan.", "active": "business", "scripts": ["tools.js"], "app": true, "section_label": "Tool", "keywords": "cafe profit break even revenue margin", "crumbs": [["Home", "/"], ["Café Business", "/business/"], ["Profit calculator", "/tools/coffee-shop-profit-calculator.html"]], "faq": [["How profitable is a coffee shop?", "It varies widely. Many independent cafés operate on single-digit to low-teens net margins after rent, labor and cost of goods; strong locations with tight cost control can do better. Use the calculator with conservative inputs."], ["What is a good beverage cost percentage?", "Many cafés target beverage cost of goods in the 20–30% range of the menu price, with food usually higher. See the menu pricing guide for worked examples."], ["How many customers does a café need to break even?", "Divide fixed monthly costs by the profit per customer (average ticket × (1 − cost of goods %)) and by days open. The calculator shows this break-even number live."]]} -->
+<div class="wrap page-head">{{CRUMBS}}<span class="eyebrow">Free tool · Café business</span><h1>Coffee shop profit calculator</h1><p class="lede">Move the sliders to model your café: average ticket, customers per day, cost of goods, labor and rent. See monthly revenue, net profit and the customers per day you need to break even.</p></div>
+<section class="wrap" style="padding-bottom:40px">
+ <div class="tool panel" id="profit-calc">
+  <div>
+   <div class="range"><div class="range-top"><label for="pc-ticket">Average ticket</label><b id="pc-v-ticket">$8</b></div><input type="range" id="pc-ticket" min="3" max="25" step=".5" value="8"></div>
+   <div class="range"><div class="range-top"><label for="pc-cust">Customers per day</label><b id="pc-v-cust">180</b></div><input type="range" id="pc-cust" min="20" max="800" step="5" value="180"></div>
+   <div class="range"><div class="range-top"><label for="pc-days">Days open per month</label><b id="pc-v-days">28</b></div><input type="range" id="pc-days" min="15" max="31" step="1" value="28"></div>
+   <div class="range"><div class="range-top"><label for="pc-cogs">Cost of goods (% of sales)</label><b id="pc-v-cogs">30%</b></div><input type="range" id="pc-cogs" min="15" max="50" step="1" value="30"></div>
+   <div class="range"><div class="range-top"><label for="pc-labor">Labor per month (incl. owner pay)</label><b id="pc-v-labor">$12,000</b></div><input type="range" id="pc-labor" min="0" max="60000" step="500" value="12000"></div>
+   <div class="range"><div class="range-top"><label for="pc-rent">Rent per month</label><b id="pc-v-rent">$4,500</b></div><input type="range" id="pc-rent" min="0" max="25000" step="250" value="4500"></div>
+   <div class="range"><div class="range-top"><label for="pc-other">Other fixed costs (utilities, software, insurance, marketing)</label><b id="pc-v-other">$2,500</b></div><input type="range" id="pc-other" min="0" max="15000" step="100" value="2500"></div>
+   <div class="range"><div class="range-top"><label for="pc-loan">Loan / lease repayments</label><b id="pc-v-loan">$1,500</b></div><input type="range" id="pc-loan" min="0" max="15000" step="100" value="1500"></div>
+  </div>
+  <div class="readout" aria-live="polite">
+   <small>Estimated monthly net profit</small><div class="big" id="pc-net">—</div>
+   <div class="row-out"><div><small>Revenue / month</small><b id="pc-rev">—</b></div><div><small>Gross profit</small><b id="pc-gross">—</b></div><div><small>Net margin</small><b id="pc-margin">—</b></div><div><small>Break-even</small><b id="pc-be">—</b></div><div><small>Rent % of sales</small><b id="pc-rentpct">—</b></div><div><small>Labor % of sales</small><b id="pc-laborpct">—</b></div></div>
+   <p style="margin:16px 0 0">Annualized: <b id="pc-year">—</b></p>
+   <p style="font-size:.8rem;opacity:.7;margin-top:10px">Illustrative estimate only. Excludes taxes, depreciation and seasonality. Not financial advice.</p>
+  </div>
+ </div>
+</section>
+<section class="wrap" style="padding-bottom:60px">
+ <div class="band">
+  <div><span class="eyebrow" style="color:var(--gold)">Free · No obligation</span><h2>Get these numbers reviewed — free</h2><p>Send your scenario and we'll reply with a personalized launch plan: where your model is optimistic, which costs to negotiate, and partners who can quote equipment, financing and coffee.</p>
+   <ul><li>Your calculator inputs are attached automatically</li><li>Reply within two business days</li><li>No spam, no sharing without your permission</li></ul></div>
+  <div class="panel" style="color:var(--ink)"><form class="form" id="pc-lead" data-form="Profit calculator — plan request" data-redirect="thank-you.html">
+   <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+   <div><label for="pl-name">Name</label><input id="pl-name" name="name" type="text" required autocomplete="name"></div>
+   <div><label for="pl-email">Email</label><input id="pl-email" name="email" type="email" required autocomplete="email"></div>
+   <div class="row"><div><label for="pl-format">Café format</label><select id="pl-format" name="format"><option>Small café</option><option>Kiosk / cart</option><option>Full-service café</option><option>Roastery café</option><option>Drive-thru</option><option>Franchise</option></select></div><div><label for="pl-loc">City</label><input id="pl-loc" name="location" type="text" required></div></div>
+   <label class="check"><input type="checkbox" name="wants_partner_quotes" value="yes" checked> I'd like partner quotes (equipment, financing, coffee)</label>
+   <button class="btn primary" type="submit">Send my numbers</button><p class="form-status" aria-live="polite"></p>
+  </form></div>
+ </div>
+</section>
+<section class="section alt"><div class="wrap prose" style="max-width:860px">
+ <h2 id="model">How the model works</h2>
+ <p><strong>Revenue</strong> is average ticket × customers per day × days open. <strong>Gross profit</strong> subtracts cost of goods — coffee, milk, cups, lids, syrups, food. <strong>Net profit</strong> then subtracts fixed monthly costs: labor, rent, other overheads and loan repayments. <strong>Break-even</strong> is the number of customers per day at which net profit reaches zero.</p>
+ <p>Benchmarks many operators use as sanity checks: rent at or below roughly 8–10% of sales, labor around 25–35% including the owner's pay, and beverage cost of goods in the 20–30% range. If your model only works with more customers than your location could plausibly serve at peak, revisit the lease or the concept. The <a href="/business/coffee-shop-startup-costs.html">startup costs guide</a> and <a href="/business/coffee-menu-pricing.html">menu pricing guide</a> go deeper.</p>
+ {{AD}}
+ <h2 id="stress">Stress-test your plan</h2>
+ <ol class="steps"><li><strong>Halve your opening traffic.</strong> New cafés often take months to reach steady volume. Can you survive at 50% of your target for six months?</li><li><strong>Add 3 points to cost of goods.</strong> Milk and coffee prices move; waste is real in year one.</li><li><strong>Pay yourself.</strong> A model that only works if the owner works for free is a job, not a business.</li></ol>
+ {{FAQ}}
+</div></section>
