@@ -1,0 +1,62 @@
+{
+  "brew": {
+    "title": "Coffee Brewing Guides: Every Method, Step by Step",
+    "h1": "Brew guides for every method",
+    "lede": "Exact ratios, water temperatures, grind sizes and timings for pour-over, French press, AeroPress, espresso, cold brew, moka pot, Chemex and Turkish coffee — plus how to fix a bad cup.",
+    "description": "Step-by-step coffee brewing guides with exact ratios, temperatures, grind sizes and troubleshooting for pour-over, French press, AeroPress, espresso and more.",
+    "about_h2": "How to use these brewing guides",
+    "intro": [
+      "Every guide on this page follows the same structure so you can compare methods quickly: a key-facts box with the starting ratio, dose, water temperature, grind and total time; a numbered method; a dialing-in section that explains which single variable to change first; and a troubleshooting table that maps what you taste to what you should adjust.",
+      "If you are new to brewing, start with the French press or AeroPress — both are forgiving and teach you how grind size and steep time change flavor. When you want more clarity and nuance, move to a pour-over cone or Chemex. Espresso rewards the most practice and the best grinder; read the <a href=\"/gear/coffee-grinder-buying-guide.html\">grinder buying guide</a> before you invest.",
+      "Whatever you brew, three habits make the biggest difference: weigh your coffee and water with a <a href=\"/gear/coffee-scales.html\">scale</a>, grind fresh right before brewing, and use clean, filtered water (see <a href=\"/beans/water-for-coffee.html\">water for coffee</a>). Our <a href=\"/tools/brew-ratio-calculator.html\">brew ratio calculator</a> and <a href=\"/tools/brew-timer.html\">brew timer</a> do the math and the counting for you."
+    ]
+  },
+  "recipes": {
+    "title": "Coffee Drink Recipes: Lattes, Iced Coffee & Classics",
+    "h1": "Coffee recipes, hot and iced",
+    "lede": "Café-quality drinks at home: latte, cappuccino, flat white, cortado, mocha, iced latte, Vietnamese iced coffee, affogato and more — each with a scalable recipe card.",
+    "description": "Easy coffee drink recipes with scalable ingredient cards: latte, cappuccino, flat white, cortado, mocha, iced latte, dalgona, affogato and Vietnamese iced coffee.",
+    "about_h2": "Getting café results at home",
+    "intro": [
+      "Most café drinks are built from two components: a concentrated coffee base and milk prepared a specific way. A latte, cappuccino, flat white and cortado can all start from the same double shot — what changes is the volume of milk and how much air you whip into it. Learn the milk once and the whole menu opens up.",
+      "No espresso machine? A moka pot or a strong AeroPress concentrate makes a convincing base for most milk drinks, and a French press doubles as a manual milk frother. Every recipe card on this site scales with the + and − buttons, prints cleanly, and lets you tick off ingredients as you go.",
+      "For iced drinks, brew stronger than you would for hot coffee or use a cold brew concentrate so melting ice doesn't leave you with a watery cup. The <a href=\"/brew/cold-brew.html\">cold brew guide</a> and the <a href=\"/journal/cold-brew-vs-iced-coffee.html\">cold brew vs iced coffee</a> explainer cover the details."
+    ]
+  },
+  "beans": {
+    "title": "Coffee Beans & Origins: Regions, Roasts & Processing",
+    "h1": "Beans, origins and the science of flavor",
+    "lede": "Where coffee grows, how processing and roasting shape the cup, and how to grind, store and brew beans so they taste the way the farmer intended.",
+    "description": "Explore coffee origins like Ethiopia, Colombia, Kenya and Brazil, plus roast levels, processing methods, grind size charts, bean storage and brewing water.",
+    "about_h2": "Why origin, process and roast matter",
+    "intro": [
+      "Coffee is the seed of a cherry, and its flavor is decided long before it reaches your grinder. Variety and altitude set the potential; processing — washed, natural, honey or wet-hulled — pushes the cup toward clarity or toward fruit and body; and roasting decides how much of that origin character survives.",
+      "Use the origin pages to understand what a label is telling you: typical altitude, harvest season, the varieties you will see, and the flavor tendencies of each country. Then use the <a href=\"/beans/roast-levels.html\">roast levels</a> and <a href=\"/beans/processing-methods.html\">processing methods</a> guides to predict how a specific bag will taste.",
+      "Freshness and preparation finish the job. The <a href=\"/beans/grind-size-chart.html\">grind size chart</a>, <a href=\"/beans/storing-coffee-beans.html\">storage guide</a> and <a href=\"/beans/water-for-coffee.html\">water guide</a> cover the three things home brewers most often get wrong."
+    ]
+  },
+  "gear": {
+    "title": "Coffee Gear Buying Guides: Grinders, Machines & More",
+    "h1": "Coffee gear, explained honestly",
+    "lede": "What actually matters when you buy a grinder, espresso machine, kettle or scale — feature by feature, budget tier by budget tier, without the marketing fluff.",
+    "description": "Independent coffee gear buying guides: how to choose a grinder, espresso machine, pour-over kettle and scale, set up a home coffee bar, and clean and descale.",
+    "about_h2": "Our approach to gear",
+    "intro": [
+      "We don't publish sponsored rankings. These guides explain the engineering and the trade-offs behind each category — burr geometry, boiler types, temperature stability, flow control — so you can judge any product on the market yourself and spend where it changes the cup.",
+      "The rule that holds across almost every budget: the grinder matters more than the brewer. A consistent grinder paired with a simple dripper will out-brew an expensive machine fed by a blade grinder. Start with the <a href=\"/gear/coffee-grinder-buying-guide.html\">grinder guide</a>, then build out with the <a href=\"/gear/home-coffee-bar-setup.html\">home coffee bar setup</a> plan.",
+      "Good gear lasts years when you maintain it. The <a href=\"/gear/cleaning-and-descaling.html\">cleaning and descaling guide</a> covers daily, weekly and monthly routines for every kind of equipment."
+    ]
+  },
+  "journal": {
+    "title": "Coffee Journal: Caffeine, Health, History & Culture",
+    "h1": "The Coffee.House journal",
+    "lede": "Long reads on caffeine, what research says about coffee and health, decaf, history, latte art, sustainability, world coffee cultures and how to taste like a pro.",
+    "description": "In-depth coffee articles on caffeine, coffee and health research, decaf, coffee history, latte art, sustainability, world coffee cultures and tasting.",
+    "about_h2": "About the journal",
+    "intro": [
+      "The journal is where we go beyond the recipe: the chemistry of caffeine and decaffeination, the history and culture of the drink, the economics behind a fair price for farmers, and the sensory skills that help you describe what you taste.",
+      "Health topics are written conservatively and reflect broad scientific consensus rather than single studies. They are general information, not medical advice — always talk with a qualified clinician about your own situation.",
+      "Want a weekly digest of new articles? Join the newsletter at the bottom of any page, or browse the <a href=\"/learn/glossary.html\">coffee glossary</a> to look up any term you meet along the way."
+    ]
+  }
+}
